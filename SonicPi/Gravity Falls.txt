@@ -1,0 +1,625 @@
+with_fx :echo do
+  play:f5, sustain: 0.05
+  sleep 0.5
+  play:d5, sustain: 0.05
+  sleep 0.5
+  play:a, sustain: 0.05
+  sleep 0.5
+  play:d5, sustain: 0.05
+  sleep 0.5
+  play:f5, sustain: 0.05
+  sleep 0.5
+  play:d5, sustain: 0.05
+  sleep 0.5
+  play:a, sustain: 0.05
+  sleep 0.5
+  play:d5, sustain: 0.05
+end
+in_thread do
+  play:d3, sustain: 0.4
+  play:d2, sustain: 0.4
+end
+sleep 0.5
+with_fx :echo do
+  play:f5, sustain: 0.05
+  sleep 0.5
+  play:c5, sustain: 0.05
+  sleep 0.5
+  play:a, sustain: 0.05
+  sleep 0.5
+  play:c5, sustain: 0.05
+  sleep 0.5
+  play:f5, sustain: 0.05
+  sleep 0.5
+  play:c5, sustain: 0.05
+  sleep 0.5
+  play:a, sustain: 0.05
+  sleep 0.5
+  play:c5, sustain: 0.05
+end
+in_thread do
+  play:f3, sustain: 0.4
+  play:f2, sustain: 0.4
+end
+sleep 0.5
+with_fx :echo do
+  play:e5, sustain: 0.05
+  sleep 0.5
+  play:cs5, sustain: 0.05
+  sleep 0.5
+  play:a, sustain: 0.05
+  sleep 0.5
+  play:cs5, sustain: 0.05
+  sleep 0.5
+  play:e5, sustain: 0.05
+  sleep 0.5
+  play:cs5, sustain: 0.05
+  sleep 0.5
+  play:a, sustain: 0.05
+  sleep 0.5
+  play:cs5, sustain: 0.05
+end
+in_thread do
+  play:a3, sustain: 0.4
+  play:a2, sustain: 0.4
+end
+sleep 0.5
+with_fx :echo do
+  play:e5, sustain: 0.05
+  sleep 0.5
+  play:cs5, sustain: 0.05
+  sleep 0.5
+  play:a, sustain: 0.05
+  sleep 0.5
+  play:cs5, sustain: 0.05
+  sleep 0.5
+  play:e5, sustain: 0.05
+  sleep 0.5
+  play:a5, sustain: 0.1
+end
+in_thread do
+  with_fx :echo do
+    2.times do
+      play:a3, sustain: 0.2
+      play:a2, sustain: 0.2
+      sleep 0.5
+    end
+  end
+end
+with_fx :echo do
+  play:d5, sustain: 0.3
+  play:d4, sustain: 0.3
+  sleep 0.5
+  play:e5, sustain: 0.1
+  play:e4, sustain: 0.1
+end
+in_thread do
+  with_fx :echo do
+    play:d2, sustain: 0.05
+    sleep 0.5
+    play:a2, sustain: 0.05
+    sleep 0.5
+    play:d3, sustain: 0.05
+    sleep 0.5
+    play:a2, sustain: 0.05
+    sleep 0.5
+    play:f3, sustain: 0.05
+    sleep 0.5
+    play:d3, sustain: 0.05
+    sleep 0.5
+    play:a2, sustain: 0.05
+    sleep 0.5
+    play:d3, sustain: 0.05
+  end
+end
+sleep 0.5
+play_chord [:f, :a, :f5], sustain: 0.4
+in_thread do
+  with_fx :echo do
+    play:d2, sustain: 0.05
+    sleep 0.5
+    play:a2, sustain: 0.05
+    sleep 0.5
+    play:f3, sustain: 0.05
+    sleep 0.5
+    play:a2, sustain: 0.05
+    sleep 0.5
+    play:f3, sustain: 0.05
+    sleep 0.5
+    play:d3, sustain: 0.05
+    sleep 0.5
+    play:a2, sustain: 0.05
+    sleep 0.5
+    play:d3, sustain: 0.05
+  end
+end
+sleep 0.5
+with_fx :echo do
+  play_chord [:a, :c5, :a5], sustain: 0.15
+  sleep 0.5
+  play_chord [:g, :g5], sustain: 0.15
+  sleep 0.5
+  play_chord [:a, :a5], sustain: 0.1
+end
+in_thread do
+  with_fx :echo do
+    play:f2, sustain: 0.05
+    sleep 0.5
+    play:c3, sustain: 0.05
+    sleep 0.5
+    play:f3, sustain: 0.05
+    sleep 0.5
+    play:c3, sustain: 0.05
+    sleep 0.5
+    play:a3, sustain: 0.05
+    sleep 0.5
+    play:f3, sustain: 0.05
+    sleep 0.5
+    play:c3, sustain: 0.05
+    sleep 0.5
+    play:f3, sustain: 0.05
+  end
+end
+sleep 0.5
+play_chord [:c, :c5], sustain: 0.4
+in_thread do
+  with_fx :echo do
+    play:f2, sustain: 0.05
+    sleep 0.5
+    play:c3, sustain: 0.05
+    sleep 0.5
+    play:f3, sustain: 0.05
+    sleep 0.5
+    play:c3, sustain: 0.05
+    sleep 0.5
+    play:a3, sustain: 0.05
+    sleep 0.5
+    play:f3, sustain: 0.05
+    sleep 0.5
+    play:c3, sustain: 0.05
+    sleep 0.5
+    play:f3, sustain: 0.05
+  end
+end
+sleep 0.5
+play_chord [:d, :d5], sustain: 0.2
+play 0, sustain: 0.1
+play_chord [:e, :e5]
+in_thread do
+  with_fx :echo do
+    play:bb2,sustain: 0.05
+    sleep 0.5
+    play:f3,sustain: 0.05
+    sleep 0.5
+    play:bb3,sustain: 0.05
+    sleep 0.5
+    play:f3,sustain: 0.05
+    sleep 0.5
+    play:d,sustain: 0.05
+    sleep 0.5
+    play:bb3,sustain: 0.05
+    sleep 0.5
+    play:f3,sustain: 0.05
+    sleep 0.5
+    play:bb3,sustain: 0.05
+  end
+end
+sleep 0.5
+play_chord [:f, :f5], sustain: 0.2
+sleep 0.5
+play:e5, sustain: 0.2
+in_thread do
+  with_fx :echo do
+    play:bb2,sustain: 0.05
+    sleep 0.5
+    play:f3,sustain: 0.05
+    sleep 0.5
+    play:bb3,sustain: 0.05
+    sleep 0.5
+    play:f3,sustain: 0.05
+    sleep 0.5
+    play:d,sustain: 0.05
+    sleep 0.5
+    play:bb3,sustain: 0.05
+    sleep 0.5
+    play:f3,sustain: 0.05
+    sleep 0.5
+    play:bb3,sustain: 0.05
+  end
+end
+sleep 0.5
+play_chord [:g, :c, :g5], sustain: 0.2
+sleep 0.5
+play_chord [:a5, :a], sustain: 0.2
+in_thread do
+  with_fx :echo do
+    play:c3, sustain: 0.05
+    sleep 0.5
+    play:g3, sustain: 0.05
+    sleep 0.5
+    play:c, sustain: 0.05
+    sleep 0.5
+    play:g3, sustain: 0.05
+    sleep 0.5
+    play:e, sustain: 0.05
+    sleep 0.5
+    play:c, sustain: 0.05
+    sleep 0.5
+    play:g3, sustain: 0.05
+    sleep 0.5
+    play:c3, sustain: 0.05
+  end
+end
+sleep 0.5
+with_fx :echo do
+  play_chord [:g, :g5], sustain: 0.2
+  sleep 0.5
+  play_chord [:f, :f5], sustain: 0.2
+end
+in_thread do
+  with_fx :echo do
+    play:c3, sustain: 0.05
+    sleep 0.5
+    play:e3, sustain: 0.05
+    sleep 0.5
+    play:a3, sustain: 0.05
+    sleep 0.5
+    play:e3, sustain: 0.05
+    sleep 0.5
+    play:cs, sustain: 0.05
+    sleep 0.5
+    play:a3, sustain: 0.05
+    sleep 0.5
+    play:e3, sustain: 0.05
+    sleep 0.5
+    play:a2, sustain: 0.05
+  end
+end
+sleep 0.5
+with_fx :echo do
+  play 0, sustain: 0.1
+  sleep 0.5
+  play_chord [:f, :f5], sustain: 0.1
+  sleep 0.5
+  play_chord [:f, :f5], sustain: 0.1
+  sleep 0.5
+  play_chord [:f, :f5], sustain: 0.1
+end
+in_thread do
+  with_fx :echo do
+    2.times do
+      play:d2, sustain: 0.05
+      sleep 0.5
+      play:a2, sustain: 0.05
+      sleep 0.5
+      play:d3, sustain: 0.05
+      sleep 0.5
+      play:a2, sustain: 0.05
+      sleep 0.5
+    end
+  end
+end
+with_fx :echo do
+  2.times do
+    play_chord [:a, :a5], sustain: 0.1
+    sleep 0.5
+  end
+  play_chord [:g, :g5], sustain: 0.1
+  sleep 0.5
+  play_chord [:f, :f5], sustain: 0.1
+end
+in_thread do
+  with_fx :echo do
+    play:d2, sustain: 0.05
+    sleep 0.5
+    play:a2, sustain: 0.05
+    sleep 0.5
+    play:d3, sustain: 0.05
+    sleep 0.5
+    play:a2, sustain: 0.05
+    sleep 0.5
+    play:d2, sustain: 0.05
+    sleep 0.5
+    play:a2, sustain: 0.05
+    sleep 0.5
+    play:e2, sustain: 0.05
+    sleep 0.5
+    play:a2, sustain: 0.05
+  end
+end
+sleep 0.5
+with_fx :echo do
+  play 0, sustain: 0.1
+  sleep 0.5
+  play_chord [:a, :a5], sustain: 0.1
+  sleep 0.5
+  play_chord [:a, :a5], sustain: 0.1
+  sleep 0.5
+  play_chord [:a, :a5], sustain: 0.1
+end
+in_thread do
+  with_fx :echo do
+    2.times do
+      play:f2, sustain: 0.05
+      sleep 0.5
+      play:c3, sustain: 0.05
+      sleep 0.5
+      play:f3, sustain: 0.05
+      sleep 0.5
+      play:c3, sustain: 0.05
+      sleep 0.5
+    end
+  end
+end
+with_fx :echo do
+  play_chord [:g, :g5], sustain: 0.1
+  sleep 0.5
+  play_chord [:a, :a5], sustain: 0.1
+  sleep 0.5
+  play_chord [:g, :g5], sustain: 0.1
+  sleep 0.5
+  play_chord [:f, :f5], sustain: 0.1
+end
+in_thread do
+  with_fx :echo do
+    2.times do
+      play:f2, sustain: 0.05
+      sleep 0.5
+      play:c3, sustain: 0.05
+      sleep 0.5
+      play:f3, sustain: 0.05
+      sleep 0.5
+      play:c3, sustain: 0.05
+      sleep 0.5
+    end
+  end
+end
+with_fx :echo do
+  play 0, sustain: 0.1
+  sleep 0.5
+  play_chord [:f, :f5], sustain: 0.1
+  sleep 0.5
+  play_chord [:f, :f5], sustain: 0.1
+  sleep 0.5
+  play_chord [:f, :f5], sustain: 0.1
+end
+in_thread do
+  with_fx :echo do
+    2.times do
+      play:bb2, sustain: 0.05
+      sleep 0.5
+      play:f3, sustain: 0.05
+      sleep 0.5
+      play:bb3, sustain: 0.05
+      sleep 0.5
+      play:f3, sustain: 0.05
+      sleep 0.5
+    end
+  end
+end
+with_fx :echo do
+  2.times do
+    play_chord [:a, :a5], sustain: 0.1
+    sleep 0.5
+  end
+  play_chord [:g, :g5], sustain: 0.1
+  sleep 0.5
+  play_chord [:f, :f5], sustain: 0.1
+end
+in_thread do
+  with_fx :echo do
+    2.times do
+      play:bb2, sustain: 0.05
+      sleep 0.5
+      play:f3, sustain: 0.05
+      sleep 0.5
+      play:bb3, sustain: 0.05
+      sleep 0.5
+      play:f3, sustain: 0.05
+      sleep 0.5
+    end
+  end
+end
+with_fx :echo do
+  play 0, sustain: 0.1
+  sleep 0.5
+  play_chord [:a, :a5], sustain: 0.1
+  sleep 0.5
+  play_chord [:a, :a5], sustain: 0.1
+  sleep 0.5
+  play_chord [:a, :a5], sustain: 0.1
+end
+in_thread do
+  with_fx :echo do
+    play:c3, sustain: 0.05
+    sleep 0.5
+    play:g3, sustain: 0.05
+    sleep 0.5
+    play:c, sustain: 0.05
+    sleep 0.5
+    play:g3, sustain: 0.05
+    sleep 0.5
+    play:c3, sustain: 0.05
+    sleep 0.5
+    play:g3, sustain: 0.05
+    sleep 0.5
+    play:bb2, sustain: 0.05
+    sleep 0.5
+    play:g3, sustain: 0.05
+  end
+end
+sleep 0.5
+with_fx :echo do
+  play 0, sustain: 0.1
+  sleep 0.5
+  play_chord [:cs5, :cs6], sustain: 0.1
+  sleep 0.5
+  play_chord [:cs5, :cs6], sustain: 0.1
+  sleep 0.5
+  play_chord [:cs5, :cs6], sustain: 0.1
+end
+in_thread do
+  with_fx :echo do
+    2.times do
+      play:a2, sustain: 0.05
+      sleep 0.5
+      play:e3, sustain: 0.05
+      sleep 0.5
+      play:a3, sustain: 0.05
+      sleep 0.5
+      play:e3, sustain: 0.05
+      sleep 0.5
+    end
+  end
+end
+with_fx :echo do
+  play 0, sustain: 0.1
+  sleep 0.5
+  play_chord [:f, :f5]
+  sleep 0.5
+  play_chord [:f, :f5]
+  sleep 0.5
+  play_chord [:f, :f5]
+end
+in_thread do
+  with_fx :echo do
+    play:d2, sustain: 0.05
+    sleep 0.5
+    play:a2, sustain: 0.05
+    sleep 0.5
+    play:d3, sustain: 0.05
+    sleep 0.5
+    play:a2, sustain: 0.05
+    sleep 0.5
+    play:d2, sustain: 0.05
+    sleep 0.5
+    play:a2, sustain: 0.05
+    sleep 0.5
+    play:e2, sustain: 0.05
+    sleep 0.5
+    play:a2, sustain: 0.05
+  end
+end
+sleep 0.5
+with_fx :echo do
+  2.times do
+    play_chord [:a, :a5], sustain: 0.1
+    sleep 0.5
+  end
+  play_chord [:g, :g5], sustain: 0.1
+  sleep 0.5
+  play_chord [:f, :f5], sustain: 0.1
+end
+in_thread do
+  with_fx :echo do
+    2.times do
+      play:f2, sustain: 0.05
+      sleep 0.5
+      play:c3, sustain: 0.05
+      sleep 0.5
+      play:f3, sustain: 0.05
+      sleep 0.5
+      play:c3, sustain: 0.05
+      sleep 0.5
+    end
+  end
+end
+with_fx :echo do
+  play 0, sustain: 0.1
+  sleep 0.5
+  play_chord [:bb, :bb5], sustain: 0.1
+  sleep 0.5
+  play_chord [:bb, :bb5], sustain: 0.1
+  sleep 0.5
+  play_chord [:bb, :b5], sustain: 0.1
+end
+in_thread do
+  with_fx :echo do
+    2.times do
+      play:bb2, sustain: 0.05
+      sleep 0.5
+      play:f3, sustain: 0.05
+      sleep 0.5
+      play:bb3, sustain: 0.05
+      sleep 0.5
+      play:f3, sustain: 0.05
+      sleep 0.5
+    end
+  end
+end
+with_fx :echo do
+  play_chord [:g, :g5], sustain: 0.2
+  sleep 0.5
+  play_chord [:c5, :c6], sustain: 0.2
+end
+in_thread do
+  with_fx :echo do
+    play:c3, sustain: 0.05
+    sleep 0.5
+    play:g3, sustain: 0.05
+    sleep 0.5
+    play:c, sustain: 0.05
+    sleep 0.5
+    play:g3, sustain: 0.05
+    sleep 0.5
+    play:c3, sustain: 0.05
+    sleep 0.5
+    play:g3, sustain: 0.05
+    sleep 0.5
+    play:c, sustain: 0.05
+    sleep 0.5
+    play:g3, sustain: 0.05
+    sleep 0.5
+  end
+end
+with_fx :echo do
+  play_chord [:a5, :cs5, :a], sustain: 0.2
+  sleep 0.5
+  play_chord [:cs6, :e5, :c5], sustain: 0.2
+end
+in_thread do
+  with_fx :echo do
+    play:a2, sustain: 0.05
+    sleep 0.5
+    play:e3, sustain: 0.05
+    sleep 0.5
+    play:a3, sustain: 0.05
+    sleep 0.5
+    play:e3, sustain: 0.05
+    sleep 0.5
+    play:a2, sustain: 0.05
+    sleep 0.5
+    play:e3, sustain: 0.05
+    sleep 0.5
+    play:a3, sustain: 0.1
+  end
+end
+with_fx :echo do
+  play_chord [:a, :f5], sustain: 0.05
+  sleep 0.5
+  play:d5, sustain: 0.05
+  sleep 0.5
+  play:f5, sustain: 0.05
+  sleep 0.5
+  play:a5, sustain: 0.05
+  sleep 0.5
+  play:e5, sustain: 0.05
+  sleep 0.5
+  play:cs5, sustain: 0.05
+  sleep 0.5
+  play:a5, sustain: 0.05
+  sleep 0.5
+  play:cs6, sustain: 0.05
+end
+in_thread do
+  play_chord [:d3, :a3, :d], sustain: 0.4
+end
+sleep 0.5
+play_chord [:d6, :d7], sustain: 0.4
+in_thread do
+  with_fx :echo do
+    play 0, sustain: 0.2
+    sleep 0.5
+    play_chord [:d2, :d1], sustain: 0.2
+  end
+end
